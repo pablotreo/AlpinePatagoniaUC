@@ -11,14 +11,57 @@ import bgImage from "../assets/background-image.jpg";
 
     <title>Alpine Patagonia</title>
 
-    <!-- SEO mínimo -->
-    <meta
-      name="description"
-      content="Alpine Patagonia. Our website is currently under construction. We’ll be back soon."
-    />
-    <meta name="robots" content="noindex, nofollow" />
+    <!-- SEO meta -->
+    <meta name="description" content="Alpine Patagonia — Sky, expeditions and climbing in Chaltén. Expert guides and bespoke climbing expeditions in Patagonia." />
+    <meta name="robots" content="index, follow" />
+    <!-- Canonical: replace the href with your production URL -->
+    <link rel="canonical" href="https://alpinepatagonia.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Alpine Patagonia" />
+    <meta property="og:description" content="Alpine Patagonia — Sky, expeditions and climbing in Chaltén. We’ll be back very soon." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alpinepatagonia.com/" />
+    <meta property="og:image" content="https://alpinepatagonia.com/assets/background-image.jpg" />
+    <meta property="og:site_name" content="Alpine Patagonia" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@your_twitter_handle" />
+    <meta name="twitter:title" content="Alpine Patagonia" />
+    <meta name="twitter:description" content="Sky, expeditions and climbing in Chaltén." />
+    <meta name="twitter:image" content="https://alpinepatagonia.com/assets/background-image.jpg" />
+
+    <!-- Structured data (replace URLs and social links with real values) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Alpine Patagonia",
+            "url": "https://alpinepatagonia.com/",
+            "logo": "https://alpinepatagonia.com/assets/logo.png",
+            "sameAs": []
+          },
+          {
+            "@type": "WebSite",
+            "url": "https://alpinepatagonia.com/",
+            "name": "Alpine Patagonia",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://alpinepatagonia.com/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
+    </script>
 
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -96,7 +139,7 @@ import bgImage from "../assets/background-image.jpg";
           class="fade-in fade-delay-2 subtitle-lg text-white/90 mb-20"
         >
           Our website is currently under construction. <br />
-         <span class="text-3xl md:text-4xl">We’ll be back very soon.</span>
+         <span class="text-2xl md:text-4xl">We’ll be back very soon.</span>
         </p>
 
         <a
